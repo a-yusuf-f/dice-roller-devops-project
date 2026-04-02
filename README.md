@@ -35,7 +35,7 @@ It was built as part of a DevOps learning journey to understand how applications
 ## 🔧 How to Run
 
 ### 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/dice-roller-devops-project.git
+git clone https://github.com/a-yusuf-f/dice-roller-devops-project.git
 
 cd dice-roller-devops-project
 
