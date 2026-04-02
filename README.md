@@ -36,10 +36,13 @@ It demonstrates a full DevOps workflow from local development to infrastructure 
 ## 🏗️ Architecture
 
 Local Machine (WSL)
+
    ↓ SSH Tunnel
 Virtual Machine (libvirt)
+
    ↓
 Flask Web Application
+
    ↓
 Browser Access (localhost:8080)
 
