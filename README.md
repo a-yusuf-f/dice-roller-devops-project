@@ -1,9 +1,10 @@
 # 🎲 Dice Roller DevOps Project
 
 ## 🚀 Overview
-This project is a simple web-based Dice Roller application inspired by Dungeons & Dragons mechanics.
 
-It was built as part of a DevOps learning journey to understand how applications are deployed from local environments to virtual machines, and eventually to the cloud.
+This project is a simple web-based Dice Roller application built with Flask and deployed on a virtual machine using Terraform and libvirt.
+
+It demonstrates a full DevOps workflow from local development to infrastructure deployment and remote access.
 
 ---
 
@@ -32,6 +33,18 @@ It was built as part of a DevOps learning journey to understand how applications
 
 ---
 
+## 🏗️ Architecture
+
+Local Machine (WSL)
+   ↓ SSH Tunnel
+Virtual Machine (libvirt)
+   ↓
+Flask Web Application
+   ↓
+Browser Access (localhost:8080)
+
+---
+
 ## 🔧 How to Run
 
 ### 1. Clone the repo
@@ -51,6 +64,14 @@ python app.py
 ### 4. Open in browser
 http://localhost:5000
 
+---
+
+## 🔮 Future Improvements
+
+- Automate deployment using Ansible  
+- Deploy application to AWS EC2  
+- Replace SSH tunneling with public access  
+- Add voice input functionality  
 
 ---
 
