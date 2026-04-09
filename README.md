@@ -8,6 +8,15 @@ It demonstrates a full DevOps workflow from local development to infrastructure 
 
 ---
 
+## 🌍 Live Deployment
+
+This application is deployed on AWS EC2 and is publicly accessible.
+
+Example:
+http://52.56.134.55:5000
+
+---
+
 ## 🧩 Tech Stack
 - Python
 - Flask
@@ -26,28 +35,35 @@ It demonstrates a full DevOps workflow from local development to infrastructure 
 ---
 
 ## 🧠 What I Learned
-- How to convert a CLI script into a web application
-- How to deploy applications onto a VM
-- Networking between host and VM (SSH tunneling)
-- Debugging infrastructure issues (disk space, networking, ports)
+
+- How to deploy applications to AWS EC2  
+- Difference between private and public networking  
+- Managing SSH keys and secure access  
+- Configuring security groups to allow traffic  
+- Debugging real-world infrastructure issues  
+- Transitioning from local development to cloud deployment  
 
 ---
 
 ## 🏗️ Architecture
 
-Local Machine (WSL)
-
-   ↓ SSH Tunnel
-   
-Virtual Machine (libvirt)
-
+### Local Setup
+WSL (Ubuntu)
    ↓
-   
-Flask Web Application
-
+libvirt VM
    ↓
-   
-Browser Access (localhost:8080)
+Flask App
+   ↓
+SSH Tunnel → Browser
+
+### Cloud Setup (AWS)
+Terraform
+   ↓
+AWS EC2 Instance
+   ↓
+Flask App
+   ↓
+Public IP → Browser 🌍
 
 ---
 
@@ -75,13 +91,8 @@ http://localhost:5000
 ## 🔮 Future Improvements
 
 - Automate deployment using Ansible  
-- Deploy application to AWS EC2  
-- Replace SSH tunneling with public access  
-- Add voice input functionality  
+- Use Nginx and port 80 for production setup  
+- Add domain name and HTTPS  
+- Implement voice input using AWS services  
 
 ---
-
-## 🚀 Next Steps
-- Automate deployment with Ansible
-- Deploy to AWS EC2
-- Add voice input functionality
